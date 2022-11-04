@@ -1,6 +1,7 @@
+import React from 'react'
 import { useState } from 'react'
 
-function GalleryItem(props){
+function GalleryItem(props: { item: { trackName: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | null | undefined; collectionName: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | null | undefined; artworkUrl100: any; primaryGenreName: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; releaseDate: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined } }){
     let [view, setView] = useState(false)
 
     const simpleView = () => {
